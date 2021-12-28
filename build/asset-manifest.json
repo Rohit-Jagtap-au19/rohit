@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pournima/static/css/main.073c9b0a.css",
+    "main.js": "/Pournima/static/js/main.d801fa2f.js",
+    "static/js/787.60968b66.chunk.js": "/Pournima/static/js/787.60968b66.chunk.js",
+    "index.html": "/Pournima/index.html",
+    "main.073c9b0a.css.map": "/Pournima/static/css/main.073c9b0a.css.map",
+    "main.d801fa2f.js.map": "/Pournima/static/js/main.d801fa2f.js.map",
+    "787.60968b66.chunk.js.map": "/Pournima/static/js/787.60968b66.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.d801fa2f.js"
+  ]
+}
