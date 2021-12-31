@@ -1,4 +1,5 @@
 import './App.css';
+import Contact from './components/Contact'
 import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
@@ -56,6 +57,9 @@ function App() {
           <Switch>
             <Route exact path="/about">
               <About mode={mode} />
+            </Route>
+            <Route exact path="/contact">
+              <Contact mode={mode} />
             </Route>
             <Route exact path="/">
               <TextForm showAlert={showAlert} heading="Try TextUtiles - Word counter, charector counter, Remove Extra Spaces" mode={mode} />
