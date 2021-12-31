@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [mode, setMode] = useState('light') // wheter dark mode is enable or not
+  const [mode, setMode] = useState('light')
   const [alert, setAlert] = useState(null)
   const showAlert = (message, type) => {
     setAlert({
@@ -20,14 +20,14 @@ function App() {
     })
     setTimeout(() => {
       setAlert(null)
-    }, 1500);
+    }, 2000);
   }
 
   const toggleMode = () => {
     if (mode === "light") {
       setMode("dark");
       document.body.style.backgroundColor = '#042743';
-      showAlert("Dark Mode Has Been Enabled", "success ")
+      showAlert("Enabled Dark Mode", "success ")
       // document.title = 'TextUtlies - Dark Mode'
 
       // change title name after certain time 
@@ -40,8 +40,8 @@ function App() {
     }
     else {
       setMode("light");
-      document.body.style.backgroundColor = 'white';
-      showAlert("Light Mode Has Been Enabled", "success ")
+      document.body.style.backgroundColor = '#F5F5F5';
+      showAlert("Enabled Light Mode ", "success ")
       // document.title = 'TextUtlies - Light Mode'
     }
   }

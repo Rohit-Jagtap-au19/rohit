@@ -5,20 +5,20 @@ export default function TextForm(props) {
         const handelUpClick = () => {
         let newtext = text.toUpperCase()
         setText(newtext)
-        props.showAlert("Converted to UpperCase !","success ")
+        props.showAlert("Converted To UpperCase !","success ")
     }
     // this is for lowercase
     const handellcClick = () => {
         let newtext = text.toLowerCase()
         setText(newtext)
-        props.showAlert("Converted to Lowercase !","success ")
+        props.showAlert("Converted To Lowercase !","success ")
 
     }
 // this is for clear
     const handelclearClick = () => {
         let newtext = ''
         setText(newtext)
-        props.showAlert("text Removed!","success ")
+        props.showAlert("Text Removed!","success ")
     }
 // this is for on click
     const handelonChange = (event) => {
@@ -26,11 +26,13 @@ export default function TextForm(props) {
     }
 // this is for copy
     const handelcopy = () =>{
-        let text = document.getElementById("mybox");
-        text.select();
-        navigator.clipboard.writeText(text.value)
-        document.getSelection().removeAllRanges();
-        props.showAlert("text copied!","success ")
+        // let text = document.getElementById("mybox");
+        // text.select();
+        // navigator.clipboard.writeText(text.value)
+        // document.getSelection().removeAllRanges();
+        navigator.clipboard.writeText(text)
+        props.showAlert("Text Copied!","success ")
+
     }
 // this is for remove extra spaces
     const removeExtraSpaces = () =>{
@@ -57,7 +59,7 @@ export default function TextForm(props) {
 
             <div className="container my-2" style={{color :props.mode==='dark'?'white':'#042743'}}>
                 <h2>Your Text Summary</h2>
-                <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} Words And {text.length} Characters</p>
+                <p>{text.split(/\s+/).filter((element)=>{return element.length!==0}).length} Words And {text.length} Characters</p>
                 <p>{0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} Minutes Read</p>
                 <h2>Preview</h2>
                 <p>{text.length>0?text:"Nothing To Preview !"}</p>

@@ -5,7 +5,7 @@ export default function About(props) {
         color: props.mode === 'dark' ? 'white' : '#042743',
         backgroundColor: props.mode === 'dark' ? 'rgb(36 74 104)' : 'white',
         border: '1px groove',
-        borderColor: 'dark' ? 'yellow' : '#042743'
+        borderColor: 'dark' ? 'black' : '#042743'
     }
     return (
         <div className='container' style={{ color: props.mode === 'dark' ? 'white' : '#042743' }}>
