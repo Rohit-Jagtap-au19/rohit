@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import {AiTwotoneCrown, AiFillHeart} from 'react-icons/ai';
 export class Navbar extends Component {
     render() {
         return (
@@ -22,6 +22,14 @@ export class Navbar extends Component {
                                 <li className="nav-item"><a className="nav-link" href="/about">sports</a></li>
                                 <li className="nav-item"><a className="nav-link" href="/about">technology</a></li>
                             </ul>
+                        </div>
+                        <div >
+                            <li className='mb-0'>
+                                <AiTwotoneCrown size="5rem" color='red'/>
+                            </li>
+                            <li className='mt-0'>
+                                <AiFillHeart size="5rem" color='red' />
+                            </li>
                         </div>
                     </div>
                 </nav>
