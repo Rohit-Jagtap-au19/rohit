@@ -29,15 +29,6 @@ function App() {
       setMode("dark");
       document.body.style.backgroundColor = '#042743';
       showAlert("Enabled Dark Mode", "success ")
-      // document.title = 'TextUtlies - Dark Mode'
-
-      // change title name after certain time 
-      //   setInterval(() => {
-      //     document.title = 'Created By Rohit'
-      //   }, 1500);
-      //   setInterval(() => {
-      //     document.title = 'Created By Pournima'
-      //   }, 2000);
     }
     else {
       setMode("light");
@@ -51,7 +42,6 @@ function App() {
     <>
       <Router>
         <Navbar title="Text-Utils" AboutTitle="About Us" contactus="Contact Us" mode={mode} toggleMode={toggleMode} />
-        {/* <Navbar /> */}
         <Alert alert={alert} />
         <div className="container my-3">
           <Switch>
