@@ -7,7 +7,7 @@ const DATA = ({ setLoginUser }) => {
     <div className="App">
       <div className="row">
       {Postdata.map((postdetails, index) => {
-        return <div className="col-md-3">
+        return <div className="col-md-3" key={postdetails.id}>
           <div className="card">
           <div className="card-body">
             <h5 >{postdetails.id}. {postdetails.title}</h5>
