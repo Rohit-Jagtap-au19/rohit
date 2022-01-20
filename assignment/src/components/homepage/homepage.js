@@ -1,20 +1,17 @@
 import React from 'react'
 import "./homepage.css"
-import Postdata from '../data/Sampledata.json'
+import DATA from './data'
 
-const Homeage = ({ setLoginUser }) => {
+const Homepage = ({ setLoginUser }) => {
     return (
-        <div className="homepage">
-            <h1>HomePage</h1>
-            <div className="button" onClick={() => setLoginUser({})}>Logout</div>
-                {Postdata.map((postdetails, index) => {
-                    return <div className="data">
-                        <h1>{postdetails.id +" "+ postdetails.title}</h1>
-                        <p>{postdetails.body}</p>
-                        </div>
-                })}
-        </div>
+        <>
+            <div className="homepage">
+                <h1>HomePage</h1>
+                <button onClick={() => setLoginUser({})} className="btn btn-primary">Logout</button>
+            </div>
+            <DATA />
+        </>
     )
 }
 
-export default Homeage
+export default Homepage

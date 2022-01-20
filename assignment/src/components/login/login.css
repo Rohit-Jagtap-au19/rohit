@@ -1,3 +1,6 @@
+*{
+    margin: auto;
+}
 .login {
     width: 400px;
     background: #fff;
@@ -7,6 +10,7 @@
     padding: 1rem;
     align-items: center;
     text-align: center;
+    margin-top: 100px;
 }
 
 .login > input {
