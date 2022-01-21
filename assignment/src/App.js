@@ -4,6 +4,7 @@ import Login from './components/login/login';
 import Register from './components/register/register';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useState } from 'react';
+import DATA from './components/homepage/data';
 
 function App() {
 
@@ -26,6 +27,13 @@ function App() {
             <Register />
             </Route>
 
+            <Route path="/givendata">
+            <DATA />
+            </Route>
+            <Route path="/data">
+            <DATA />
+            </Route>
+          
         </Switch>
       </Router>
     </div>
