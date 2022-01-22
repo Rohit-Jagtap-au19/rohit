@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Financepeer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this project I created a web app that uses reactjs to **Financepeer**
 
-## Available Scripts
+As a demonstration of my skills, I built an app that utilizes components to fetch data from an internal server, displays that data,introduces **routing** concepts, **authenticates** and **authorizes** users.
 
-In the project directory, you can run:
+### Project Details
 
-### `npm start`
+<details>
+<summary>Click to view the Functionality that are added</summary>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Project Functionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The app have the following functionalities
 
-### `npm test`
+- Register Route
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - To create an account, users will need to provide their name,email address and password.
+  - if u provide already registred email address There will be alert.
+  - while registering if ur password and re-entred paessword should be the same or there will be alert.
+  - provied data of the user (emailId) will be checked if that is already present in our collection user will see alert or this is new user then users emailId,password and name will be added to local mongodb/myuserdb/users
 
-### `npm run build`
+- Login Route
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Login is easy with a valid username and password. Users will be able to access their accounts once they've registered.
+  - Navigation links are provided in the Navbar for users to access Home, given data
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Home Route
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - JSON files can only be uploaded via this panel. I used Filereader to read the file containt and show it in console.
+  - After clicking the logout link, users will be able to navigate to the login page.
 
-### `npm run eject`
+- Data
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  - Given Jsondata is avilable here 25 * 4.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Project Details
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- In order to focus my efforts on the functionality of this app rather than styling it, I used Bootstrap for quick styling for most of the components.
+- I built a Register page to store user information in mongodb, and then I built a login page to cross-check user email with the email in mongodb, and if they do not   exist, There will be alert.
+- Upon successfully entering user details and pressing login, the user will be redirected to the home page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Improvements to come
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-json data will be saved in data base
+- A pagination was needed to limit the number of details displayed on each page to ten.
+- Clicking a particular post will redirect the user to the posts by that particular user of that particular post
+- A user interface and user experience needs to be improved to be attractive.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+</details>
