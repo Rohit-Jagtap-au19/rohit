@@ -1,8 +1,0 @@
-hello sir/mam i m rohit jagtap.
-i have completed this assignmnet using react for frontend node.js forr backend and to store user regidtration data i have used mongo db.
-to run this project u need to start front end and backend server (mongo db should be installed in your local machine to store user regidtration data) onece u done done with that u need to register first then u have to log in to to see the home page there we have upload botton once u select your file the file details will we shown like file name and last modified date
-there is also another page to show the gien jason data.
-at the end of the homepage u can see the log out button once u clicked on that button u will b log out form the page and redirected to log in page u can log in with same registred email id.
-e mail id should be unique every time u register that email id and password will be saved into mongo db data base. if u try to use already registred email id to regster again u will see the email id is already registred.
-while log in in if u provide unregistred data u will see the alret that user is not registredu need too register first.
-for log in we have check our log data with with monogo db data base id and password if that macthes only then u can see the home page of our website.we did the same to check user is already registredor not.
