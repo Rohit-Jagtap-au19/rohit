@@ -29,10 +29,11 @@ The app have the following functionalities
 
   - JSON files can only be uploaded via this panel. I used Filereader to read the file containt and show it in console.
   - After clicking the logout link, users will be able to navigate to the login page.
+  - Even user provide "/" path he will be redirected to log in page.
 
 - Data
 
-  - Given Jsondata is avilable here 25 * 4.
+  - Given Jsondata is avilable here.
 
 #### Project Details
 
@@ -43,7 +44,7 @@ The app have the following functionalities
 
 ### Improvements to come
 
--json data will be saved in data base
+- json data will be saved in data base and showed on same page.
 - A pagination was needed to limit the number of details displayed on each page to ten.
 - Clicking a particular post will redirect the user to the posts by that particular user of that particular post
 - A user interface and user experience needs to be improved to be attractive.
