@@ -29,11 +29,7 @@ function App() {
 
             <Route path="/givendata">
             <DATA />
-            </Route>
-            <Route path="/data">
-            <DATA />
-            </Route>
-          
+            </Route>            
         </Switch>
       </Router>
     </div>
