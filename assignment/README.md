@@ -2,7 +2,7 @@
 
 In this project I created a web app that uses reactjs to **Financepeer**
 
-As a demonstration of my skills, I built an app that utilizes components to fetch data from an internal server, displays that data,introduces **routing** concepts, **authenticates** and **authorizes** users.
+As a demonstration of my skills, I built an app that utilizes components to fetch data from an internal server, introduces **routing** concepts, **authenticates** and **authorizes** users.
 
 ### Project Details
 
